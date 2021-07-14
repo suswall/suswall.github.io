@@ -1,6 +1,7 @@
 var he = window.innerHeight;
 
 let video = document.getElementById("hevi")
+video.defaultMuted = true;
 let nav = document.getElementById("nav")
 
 video.style.maxHeight = (he - nav.style.height).toString() + "px";
