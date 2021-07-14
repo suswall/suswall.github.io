@@ -177,6 +177,9 @@ aside {
 #tc, #ct, #st {
     display: none;
 }
+td {
+    width: 50%;
+}
 td .add .location {
     text-indent: 14px;
     font-size: 3.5vw;
