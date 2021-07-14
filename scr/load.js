@@ -1,3 +1,19 @@
+var he = window.innerHeight;
+
+let video = document.getElementById("hevi")
+let nav = document.getElementById("nav")
+
+video.style.maxHeight = (he - nav.style.height).toString() + "px";
+video.style.height = (he - nav.style.height).toString() + "px";
+
+function sizeChanged() {
+    var h = window.innerHeight;
+    var diff = he - h;
+    he = h
+
+    video.style.maxHeight = (parseInt(video.style.maxHeight) - diff).toString() + "px";
+    video.style.height = (parseInt(video.style.maxHeight) - diff).toString() + "px";
+}
 let json = [
     [
         "Spinach Pizzas Make the Monday Madness Go Away!",

@@ -11,7 +11,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="scr/load.js"></script>
+    <script defer src="scr/load.js"></script>
     <!-- <script defer src="scr/side.js"></script>-->
     <title>Suswall Pizza</title>
 
@@ -19,9 +19,9 @@
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
     </style>
 </head>
-<body>
+<body onresize="sizeChanged()">
     <!-- Nav Bar -->
-    <nav>
+    <nav id="nav">
         <img src="img/suswall.png">
         <div>
             <a target="__blank" href="https://instagram.com/suswallpizza"><i class="fa fa-instagram" aria-hidden="true"></i>
@@ -32,7 +32,7 @@
 
     <!-- Hero Video -->
     <div id="hero">
-        <video autoplay muted loop src="img/hero3.mp4"></video>
+        <video id="hevi" src="img/hero3.mp4" autoplay muted loop></video>
         <h1>GLUTEN-FREE, SUS PIZZA IN<br>GREENVILLE, SC.</h1>
     </div>
 
