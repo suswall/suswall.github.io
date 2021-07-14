@@ -240,6 +240,11 @@ footer p:last-child {
         width: 96%;
     }
   }
+  @media only screen and (max-width: 650px) {
+    #hero video {
+        max-width: 100%;
+    }
+  }
   @media only screen and (max-width: 530px) {
     nav img {
         height: 7vw;
