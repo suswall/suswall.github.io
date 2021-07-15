@@ -1,5 +1,5 @@
 body {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 h1#title {
     margin-left: 15px;
@@ -58,6 +58,6 @@ h1#title {
 }
 @media only screen and (max-width: 735px) {
     .s {
-        width:98%;
+        width:96%;
     }
 }
