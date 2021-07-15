@@ -1,0 +1,60 @@
+h1#title {
+    margin-left: 15px;
+}
+.postBox {
+    margin: 0 auto;
+    width: 99%;
+}
+.s {
+    width: 31%;
+    margin: 10px 10px 55px 10px;
+    filter: drop-shadow(5px 5px 5px rgba(80, 76, 77, 0.5));
+    transition: filter 0.2s;
+    display: inline-block;
+}
+.s:hover {
+    filter: drop-shadow(5px 5px 5px rgba(80, 76, 77, 0));
+}
+.s div {
+    position: relative;
+    min-height: 150px;
+}
+.s div h1 {
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    color: #efefef;
+    background-color:rgba(39, 35, 35, 0.3);
+    text-indent: 4px;
+    font-size: max(1.6vw, 28px);
+}
+.s div img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.s p {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    min-height: 60px;
+    max-height: 60px;
+    text-indent: 4px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+}
+@media only screen and (max-width: 968px) {
+    .s {
+        width: 47%;
+    }
+}
+@media only screen and (max-width: 735px) {
+    .s {
+        width:98%;
+    }
+}

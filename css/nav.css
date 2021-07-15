@@ -1,0 +1,50 @@
+body {
+    background: rgb(226, 226, 219);
+    margin: 0;
+    font-family: 'Noto Sans JP';
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: rgb(36, 36, 36);
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 12px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+nav {
+    background-color: rgb(53, 49, 49);
+    overflow: hidden;
+    display: flex;
+    max-height: 75px;
+    align-items: center;
+}
+nav img {
+    display: absolute;
+    height: 4.5vw;
+    max-height: 50px;
+    margin-left: 10px;
+}
+nav div {
+    margin-left: auto;
+}
+nav div a {
+    color: #efefef;
+    float: right;
+    padding: 18px 16px;
+    font-weight: bold;
+    transition: background-color 0.5s, color 0.5s;
+    font-size: min(2vw, 30px);
+    text-decoration: none;
+}
+nav div a:hover {
+    background-color: #efefef;
+    color: rgb(53, 49, 49);
+}
