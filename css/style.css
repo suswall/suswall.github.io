@@ -41,6 +41,19 @@ aside {
     justify-content: space-between;
     max-height: 1090px;
 }
+aside h1, aside div.p, aside img {
+    text-align: center;
+    margin-top: 30px;
+}
+aside img {
+    width: 60%;
+    height: auto;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 600px;
+    border: 7px outset rgb(206, 206, 206);
+    background-image: linear-gradient(to bottom right, rgb(206, 206, 206), rgb(122, 122, 122));
+}
 #mob {
     float: left;
     width: 98%;
@@ -187,7 +200,7 @@ footer p:last-child {
   }
 @media only screen and (max-width: 700px) {
     footer {
-        display: none;
+        margin-top: 20px;
     }
     aside#con {
         display: none;
